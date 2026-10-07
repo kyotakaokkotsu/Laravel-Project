@@ -8,11 +8,11 @@
             <!-- Title -->
             <div class="mb-6">
                 <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
-                    About
+                    {{ $title }}
                 </h1>
 
                 <p class="mt-2 text-gray-600 dark:text-gray-400">
-                    Youkoso watashi no About ʕ •ᴥ•ʔ
+                    {{ $description }}
                 </p>
             </div>
 
@@ -25,7 +25,7 @@
                     </p>
 
                     <p class="text-lg font-medium text-gray-900 dark:text-white">
-                        Yusuf Morla Lagamani
+                        {{ $nama }}
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@
                     </p>
 
                     <p class="text-lg font-medium text-gray-900 dark:text-white">
-                        XI PPLG 3
+                        {{ $kelas }}
                     </p>
                 </div>
 
@@ -45,17 +45,16 @@
                     </p>
 
                     <a
-                        href="https://github.com/kyotakaokkotsu"
+                        href="{{ $repository }}"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="text-lg font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline"
                     >
-                        github.com/kyotakaokkotsu
+                        {{ $repository }}
                     </a>
                 </div>
 
             </div>
-
         </div>
 
     </div>
